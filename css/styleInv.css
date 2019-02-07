@@ -1,0 +1,349 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+body {
+	font: 12px/18px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	width: 100%;
+    min-width: 1024px;
+}
+
+.navTopWrap{
+    background: #d6d6d6;
+    height: 50px;
+    width: 100%;
+    min-width: 1024px;
+}
+
+.navTop{
+    height: 100%;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.navTopBlock{
+    border-right: 1px solid white;
+    float: left;
+    height: 100%;
+    width: 33%;
+}
+
+.navTopBlock a{
+    color: #000000 !important;
+}
+
+.navTopBlock:nth-child(1){
+    background: url(../images/eye.png) 0 13px no-repeat;
+    box-sizing: border-box;
+    font-size: 17px !important;
+    padding: 10px 0;
+    line-height: 30px;
+    padding-left: 40px;
+}
+
+.navTopBlock:nth-child(2){
+    height: 30px;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.navTopBlock:nth-child(2) span{
+    float: left;
+    margin: 0 5px 0 20px;
+    font-size: 17px !important;
+}
+
+a.smallSize{
+    font-size: 14px !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    height: 20px !important;
+    line-height: 20px;
+    margin: 6px 2px 0 2px;
+}
+
+a.normalSize{
+    font-size: 16px !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    height: 20px !important;
+    line-height: 20px;
+    margin: 6px 2px 0 2px;
+}
+
+a.bigSize{
+    font-size: 18px !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    height: 20px !important;
+    line-height: 20px;
+    margin: 6px 2px 0 2px;
+}
+
+a.current {
+    -moz-box-shadow: inset 0 2px 2px 0 #666;
+    -webkit-box-shadow: inset 0 2px 2px 0 #666;
+    box-shadow: inset 0 2px 2px 0 #666;
+    background: #b3b3b3;
+    text-decoration: none;
+}
+
+.navTopBlock:nth-child(3){
+    border-right: 0px solid white;
+    height: 30px;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.navTopBlock:nth-child(3) span{
+    float: left;
+    margin: 0 5px 0 20px;
+    font-size: 17px !important;
+}
+
+.navTopBlock:nth-child(3) a{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    text-decoration: none;
+    float: left;
+    padding: 0 5px;
+    height: 20px !important;
+    line-height: 20px;
+    margin: 6px 2px 0 2px;
+}
+
+.pageWrap{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 12px;
+    width: 1024px;
+}
+
+.headerMain{
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px auto;
+}
+
+.menuMain{
+    margin: 0px;
+    width: 100%;
+}
+
+.menuMainUl{}
+
+.menuMainLi{
+    border: 1px solid #000000;
+    border-left: 0px solid #000000;
+    float: left;
+    height: 88px;
+    list-style: none;
+    position: relative;
+}
+
+.menuMainLi:nth-child(1){
+    border-left: 1px solid #000000;
+}
+
+.menuMainLi:hover .submenuMainUl{
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 89px;
+}
+
+.menuMainA{
+    display: block;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    height: 100%;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.submenuMainUl{
+    display: none;
+}
+
+.submenuMainLi{
+    border: 1px solid #000000;
+    border-top: 0px solid #000000;
+}
+
+.submenuMainA{
+    background: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.menuMainACurrent{
+    background: #000000;
+}
+
+.menuMainACurrent>a{
+    background: #000000;
+    color: white;
+}
+
+.block1IndexInv{
+    float: none;
+    font-size: 2.8em;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.blockNav{
+    float: none;
+    font-size: 1.6em;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.photoLD{
+    float: left;
+    margin: 20px 5% 0 0;
+    width: 25%;
+}
+
+.block2IndexInv{
+    float: left;
+    font-size: 1.9em;
+    line-height: 1.1;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.blockMethodicalInv{
+    font-size: 1.9em;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+.blockMyachievementsInv img{
+    float: left;
+    margin: 20px 5% 0 0;
+    width: 30%;
+}
+
+.blockMyachievementsInv img:nth-child(3n){
+    margin: 20px 0% 0 0;
+}
+
+#inputName,#inputTheme{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#inputMessage{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.footerInv{
+    font-size: 1.3em;
+    line-height: 1;
+    margin: 20px 0;
+}

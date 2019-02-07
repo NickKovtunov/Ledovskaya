@@ -1,0 +1,518 @@
+@font-face {
+    font-family: 'Conv_Lato-Black';
+    src: url('../fonts/Lato-Black.eot');
+    src: local('☺'), url('../fonts/Lato-Black.woff') format('woff'), url('../fonts/Lato-Black.ttf') format('truetype'), url('../fonts/Lato-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Lato-Bold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: local('☺'), url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.ttf') format('truetype'), url('../fonts/Lato-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Lato-Semibold';
+    src: url('../fonts/Lato-Semibold.eot');
+    src: local('☺'), url('../fonts/Lato-Semibold.woff') format('woff'), url('../fonts/Lato-Semibold.ttf') format('truetype'), url('../fonts/Lato-Semibold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Lato-SemiboldItalic';
+    src: url('../fonts/Lato-SemiboldItalic.eot');
+    src: local('☺'), url('../fonts/Lato-SemiboldItalic.woff') format('woff'), url('../fonts/Lato-SemiboldItalic.ttf') format('truetype'), url('../fonts/Lato-SemiboldItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Lato-Medium';
+    src: url('../fonts/Lato-Medium.eot');
+    src: local('☺'), url('../fonts/Lato-Medium.woff') format('woff'), url('../fonts/Lato-Medium.ttf') format('truetype'), url('../fonts/Lato-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Lato-Light';
+    src: url('../fonts/Lato-Light.eot');
+    src: local('☺'), url('../fonts/Lato-Light.woff') format('woff'), url('../fonts/Lato-Light.ttf') format('truetype'), url('../fonts/Lato-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Прибитый к низу футер */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -75px 0; /* отрицательный нижний отступ на высоту футера */
+    padding: 0;
+}
+.footer-push{
+    height: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    height: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+.customMenuWrap{
+    background: #57b4a0;
+}
+
+@media (min-width: 768px){
+    .customMenu{
+        float: right;
+    }
+}
+
+.menuPoint{
+    color: #32323b !important;
+    font-family: 'Conv_Lato-Semibold',Sans-Serif !important;
+    font-size: 1.4em !important;
+    display: block !important;
+    text-decoration: none !important;
+    line-height: 1.5 !important;
+
+    -webkit-transition: color 1s ease 0s !important;
+    -moz-transition: color 1s ease 0s !important;
+    -o-transition: color 1s ease 0s !important;
+    transition: color 0.3s ease 0s !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .menuPoint{
+        font-size: 1.2em !important;
+    }
+}
+
+.menuPoint:hover{
+    color: #ffffff !important;
+}
+
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px){
+    .glyphEye{
+        display:none !important;
+    }
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #57b4a0;
+}
+
+.dropdown-menu>li>a{
+    font-family: 'Conv_Lato-Semibold',Sans-Serif !important;
+}
+
+.arrowGreen{
+    display: block;
+    height: auto;
+    margin-top: -1px;
+    width: 100%;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin-left: 10px !important;
+}
+
+.logo{
+    height: 60px;
+    margin: 12px 0px 10px 0px;
+}
+
+@media (max-width: 767px){
+    .logo{
+        height: 36px;
+        margin: 7px 0px 7px 0px;
+    }
+}
+
+.partLogo{
+    background: #57b4a0;
+    padding: 12% 5% 3% 5%;
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .partLogo{
+        background: #57b4a0;
+        padding: 20% 5% 3% 5%;
+        width: 100%;
+    }
+}
+
+.headerWhite{
+    color: #ffffff;
+    font-family: 'Conv_Lato-Light',Sans-Serif;
+    font-size: 4em;
+    line-height: 1;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .headerWhite{
+        color: #ffffff;
+        font-family: 'Conv_Lato-Light',Sans-Serif;
+        font-size: 2.5em;
+        line-height: 1.1;
+        text-align: center;
+    }
+}
+
+.headerBlack{
+    color: #000000;
+    font-family: 'Conv_Lato-Light',Sans-Serif;
+    font-size: 4em;
+    line-height: 1;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .headerBlack{
+        color: #000000;
+        font-family: 'Conv_Lato-Light',Sans-Serif;
+        font-size: 2.5em;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.lineWhite{
+    background: #ffffff;
+    height: 3px;
+    margin: 30px auto 0;
+    width: 15%;
+}
+
+.lineGreen{
+    background: #57b4a0;
+    height: 3px;
+    margin: 30px auto 30px;
+    width: 15%;
+}
+
+.partWhite{
+    background: #ffffff;
+    padding: 3% 0%;
+    width: 100%;
+}
+
+.squareBlockLink{
+    height: 100%;
+    color: white !important;
+    text-decoration: none !important;
+    width: 100%;
+}
+
+.squareBlockWrap{
+    margin-bottom: 30px;
+    padding: 30px 10px;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.squareBlockWrap img{
+    bottom: 15px;
+    left: 15px;
+    max-width: 15%;
+    position: absolute;
+}
+
+.squareBlockBlue{
+    background: #e1e1e1;
+    -webkit-transition: background 1s ease 0s !important;
+    -moz-transition: background 1s ease 0s !important;
+    -o-transition: background 1s ease 0s !important;
+    transition: background 0.3s ease 0s !important;
+}
+
+.squareBlockBlue:hover{
+    background: #27aac6 !important;
+}
+
+.squareBlockGreen{
+    background: #e1e1e1;
+    -webkit-transition: background 1s ease 0s !important;
+    -moz-transition: background 1s ease 0s !important;
+    -o-transition: background 1s ease 0s !important;
+    transition: background 0.3s ease 0s !important;
+}
+
+.squareBlockGreen:hover{
+    background: #99b31e !important;
+}
+
+.squareBlockOrange{
+    background: #e1e1e1;
+    -webkit-transition: background 1s ease 0s !important;
+    -moz-transition: background 1s ease 0s !important;
+    -o-transition: background 1s ease 0s !important;
+    transition: background 0.3s ease 0s !important;
+}
+
+.squareBlockOrange:hover{
+    background: #e27319 !important;
+}
+
+@media (min-width: 768px){
+    .squareBlockOrange{
+        height: 275px;
+    }
+}
+
+.squareBlockHeader{
+    color: #ffffff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-family: 'Conv_Lato-Semibold',Sans-Serif;
+    font-size: 3.3em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.squareBlockText{
+    color: #ffffff ;
+    font-family: 'Conv_Lato-Semibold',Sans-Serif !important;
+    font-size: 1.5em !important;
+    line-height: 1;
+    margin: 10px 0px 0px 0px ;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    -webkit-transition: color 1s ease 0s !important;
+    -moz-transition: color 1s ease 0s !important;
+    -o-transition: color 1s ease 0s !important;
+    transition: color 0.3s ease 0s !important;
+}
+
+.squareBlockText2{
+    color: #ffffff ;
+    font-family: 'Conv_Lato-Semibold',Sans-Serif !important;
+    font-size: 2em !important;
+    line-height: 1.3;
+    margin: 10px 0px 0px 0px ;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    -webkit-transition: color 1s ease 0s !important;
+    -moz-transition: color 1s ease 0s !important;
+    -o-transition: color 1s ease 0s !important;
+    transition: color 0.3s ease 0s !important;
+}
+
+.slick-slide {
+    margin: 0 5px;
+}
+
+.photoAlbum img{
+    border: 3px solid #57b4a0;
+    height: auto;
+    width: 100%;
+}
+
+.usualText{
+    color: #32323b !important;
+    font-family: 'Conv_Lato-Light',Sans-Serif !important;
+    font-size: 1.9em !important;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .usualText{
+        color: #32323b !important;
+        font-family: 'Conv_Lato-Light',Sans-Serif !important;
+        font-size: 1.5em !important;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.usualText2{
+    color: #32323b !important;
+    font-family: 'Conv_Lato-Light',Sans-Serif !important;
+    font-size: 2.1em !important;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .usualText2{
+        color: #32323b !important;
+        font-family: 'Conv_Lato-Light',Sans-Serif !important;
+        font-size: 1.7em !important;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.usualText3{
+    color: #32323b !important;
+    font-family: 'Conv_Lato-SemiboldItalic',Sans-Serif !important;
+    font-size: 1.5em !important;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px){
+    .usualText3{
+        color: #32323b !important;
+        font-family: 'Conv_Lato-SemiboldItalic',Sans-Serif !important;
+        font-size: 1.3em !important;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+}
+
+.usualText span{
+    font-family: 'Conv_Lato-SemiboldItalic',Sans-Serif !important;
+}
+
+.formText{
+    color: #32323b;
+    font-family: 'Conv_Lato-Semibold',Sans-Serif !important;
+    font-size: 1.4em !important;
+}
+
+.linksText{
+    font-family: 'Conv_Lato-Light',Sans-Serif !important;
+    font-size: 1.9em !important;
+    line-height: 1.2;
+}
+
+.marginBottom{
+    margin-bottom: 30px;
+}
+
+.arrowTop{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    z-index: 10;
+    width: 3.5%;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	/*т.к. футер прибит к низу => height, margin и padding указаны вверху*/
+	background: #57b4a0;
+}
+
+.footerText{
+    text-align: center;
+    color: #32323b;
+    font-family: 'Conv_Lato-SemiboldItalic',Sans-Serif;
+    font-size: 1.3em;
+    line-height: 1;
+    padding: 20px 0;
+}
+
+@media (max-width: 767px){
+    .footerText{
+        text-align: center;
+        color: #32323b;
+        font-family: 'Conv_Lato-SemiboldItalic',Sans-Serif;
+        font-size: 1.1em;
+        line-height: 1;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu {
+        background-color: #fff !important;
+        border-radius: 0 !important;
+    }
+}
